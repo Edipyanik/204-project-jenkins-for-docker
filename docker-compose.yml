@@ -7,7 +7,7 @@ services:
             MYSQL_ROOT_PASSWORD: P123456p
             MYSQL_DATABASE: phonebook_db
             MYSQL_USER: admin
-            MYSQL_PASSWORD: Clarusway_1
+            MYSQL_PASSWORD: Edip_12345
         volumes:
             - db-data:/var/lib/mysql
         configs:
@@ -16,7 +16,7 @@ services:
         networks:
             - clarusnet
     app-server:
-        image: "046402772087.dkr.ecr.us-east-1.amazonaws.com/call-repo/phonebook-app:latest"
+        image: "314170052620.dkr.ecr.us-east-2.amazonaws.com/edip-repo/phonebook-app:latest"
         deploy:
             mode: global
             update_config:
